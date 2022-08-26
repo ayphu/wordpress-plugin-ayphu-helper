@@ -1,0 +1,11 @@
+#wpadminbar #wp-admin-bar-ayphu_top_admin_bar_links .ab-item .dashicons-backup:before {
+  font: normal 20px/1 dashicons;
+  content: '\f321';
+  position: relative;
+  float: left;
+  padding: 8px 0 0 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: none !important;
+  margin-right: 6px;
+}
