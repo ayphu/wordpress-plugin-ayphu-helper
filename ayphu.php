@@ -1,9 +1,9 @@
 <?php
 /*
   Plugin Name: Ayphu Helper
-  Plugin URI: https://ayphu.com
+  Plugin URI: https://github.com/ayphu/wordpress-plugin-ayphu-helper
   Description: Funcionalidades a medida para sitios web en Ayphu.
-  Version: 1.0.0
+  Version: 1.0.1
   Author: Ayphu
   Author URI: https://ayphu.com
   License: GPLv2 or later
@@ -75,7 +75,6 @@ if (is_admin()) {
     'ayphu'
   );
 
-  //Set the branch that contains the stable release.
   $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 
   add_action('wp_before_admin_bar_render', 'ayphu_top_admin_bar_links');
