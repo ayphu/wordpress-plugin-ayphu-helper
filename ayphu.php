@@ -68,14 +68,6 @@ function ayphu_admin_notice__success() { ?>
 }
 
 if (is_admin()) {
-  require 'plugin-update-checker-4.13/plugin-update-checker.php';
-  $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/ayphu/wordpress-plugin-ayphu-helper.git',
-    __FILE__,
-    'ayphu'
-  );
-
-  $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 
   add_action('wp_before_admin_bar_render', 'ayphu_top_admin_bar_links');
   add_action('admin_enqueue_scripts', 'ayphu_css_and_js');
